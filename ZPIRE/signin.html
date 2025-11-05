@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - MindPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-bar">
+        <div class="logo"><a href="index.html">MindPulse</a></div>
+        <nav class="desktop-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="chat.html" class="nav-link">Chat</a>
+            <a href="my-bookings.html" class="nav-link">Booking</a>
+            <a href="profile.html" class="nav-link">Profile</a>
+            <a href="signin.html" class="nav-link auth-link">Sign In</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <div class="auth-container">
+            <h1>Welcome Back</h1>
+            <p class="page-intro">Sign in to continue to your MindPulse account.</p>
+            <form class="auth-form" id="signin-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-options">
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#" class="form-link">Forgot password?</a>
+                </div>
+                <button type="submit" class="cta-button">Sign In</button>
+            </form>
+            <p class="auth-footer">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <nav class="footer-nav">
+            <a href="terms.html" class="footer-link">Terms of Use</a>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <a href="cookies.html" class="footer-link">Cookie Policy</a>
+        </nav>
+        <p>&copy; 2025 MindPulse. All rights reserved.</p>
+    </footer>
+    <script src="auth.js"></script>
+</body>
+</html>
